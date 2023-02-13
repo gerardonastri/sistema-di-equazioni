@@ -1,0 +1,27 @@
+.container{
+    width: 800px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin-top: 40px;
+    width: 200px;
+    margin: 50px auto;
+}
+.risultato{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
