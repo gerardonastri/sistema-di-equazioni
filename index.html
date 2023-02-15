@@ -10,35 +10,53 @@
 <body>
     
     <div class="container">
-        <h1>Inserisci i coefficienti della prima equazione</h1>
-        <div>
-            <input type="number" name="" id="a">
-            <input type="number" name="" id="b">
-            <input type="number" name="" id="c">
-            <input type="number" name="" id="n1">
-        </div>
-        <h1>Inserisci i coefficienti della seconda equazione</h1>
-        <div>
-            <input type="number" name="" id="d">
-            <input type="number" name="" id="e">
-            <input type="number" name="" id="f">
-            <input type="number" name="" id="n2">
+        <div class="firstBlock">
+            <h1>Inserisci i coefficienti della prima equazione</h1>
+            <div>
+                <input type="number" name="" id="a">
+                <input type="number" name="" id="b">
+                <input type="number" name="" id="c">
+                <input type="number" name="" id="n1">
+            </div>
+            <h1>Inserisci i coefficienti della seconda equazione</h1>
+            <div>
+                <input type="number" name="" id="d">
+                <input type="number" name="" id="e">
+                <input type="number" name="" id="f">
+                <input type="number" name="" id="n2">
 
-        </div>
-        <h1>Inserisci i coefficienti della terza equazione</h1>
-        <div>
-            <input type="number" name="" id="g">
-            <input type="number" name="" id="h">
-            <input type="number" name="" id="i">
-            <input type="number" name="" id="n3">
+            </div>
+            <h1>Inserisci i coefficienti della terza equazione</h1>
+            <div>
+                <input type="number" name="" id="g">
+                <input type="number" name="" id="h">
+                <input type="number" name="" id="i">
+                <input type="number" name="" id="n3">
 
+            </div>
+            <div class="buttons">
+                <button>Calcola risultato</button>
+                <button id="more">Risolvi più equazioni</button>
+            </div>
         </div>
-        <button>Calcola risultato</button>
+        <div class="secondBlock">
+            <h1>Inserisci l'equazione (dividi le equazioni con una virgola: 10-x=y-11, x+2y=20)</h1>
+            <textarea name="" id="equazione" cols="30" rows="10">
+
+            </textarea>
+            <div class="buttons">
+                <button id="btn2">Calcola risultato</button>
+                <button id="toggle">Risolvi 3 equazioni</button>
+            </div>
+        </div>
         <div class="risultato"></div>
     </div>
 
 
-
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/nerdamer.core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Algebra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Calculus.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nerdamer@latest/Solve.js"></script>
+    <script src="app.js" ></script>
 </body>
 </html>

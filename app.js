@@ -77,8 +77,39 @@ btn.addEventListener("click", () => {
     //calcoliamo z
     const z = determinante4 / determinante;
 
-    console.log(x, y, z);
     const risultato = document.querySelector(".risultato");
+    risultato.innerText = "";
     risultato.innerHTML = `Le soluzioni sono: x = ${x}, y = ${y}, z = ${z}`;
   }
+});
+
+//piu equazioni
+const calcola2 = document.querySelector("#btn2");
+const more = document.querySelector("#more");
+const toggle = document.querySelector("#toggle");
+const firstDiv = document.querySelector(".firstBlock");
+const secondDiv = document.querySelector(".secondBlock");
+const equazione = document.querySelector("#equazione");
+
+more.addEventListener("click", () => {
+  firstDiv.style.display = "none";
+  secondDiv.style.display = "flex";
+});
+toggle.addEventListener("click", () => {
+  firstDiv.style.display = "block";
+  secondDiv.style.display = "none";
+});
+
+calcola2.addEventListener("click", () => {
+  const eq = equazione.value.trim().split(",");
+  const result = nerdamer.solveEquations(eq);
+  const risultato = document.querySelector(".risultato");
+  risultato.innerText = "";
+
+  result.forEach((e) => {
+    const span = document.createElement("span");
+    span.style.marginLeft = "10px";
+    span.innerText = `${e[0]}: ${e[1]}`;
+    risultato.appendChild(span);
+  });
 });

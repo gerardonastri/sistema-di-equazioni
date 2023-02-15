@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.container div{
+.container div div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,4 +24,12 @@ button{
     text-align: center;
     margin-top: 30px;
     font-size: 30px;
+}
+
+
+.secondBlock{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
